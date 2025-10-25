@@ -43,3 +43,11 @@ A DBMS system that connects students, companies and recruiters through a central
   ->Students can register for upcoming fairs
   ->Recruiters can view attending candidates and resumes beforehand
   ->Track check-in/check-out times during the event
+
+6. Recruiter Resume Review System
+   ->Recruiters can:
+     i.Rate resumes (1–5)
+     ii.Add comments or feedback
+     iii.Mark candidates as shortlisted or rejected
+   ->All reviews are stored in the database for analytics
+
