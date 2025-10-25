@@ -1,0 +1,38 @@
+1.Student
+  ->Register & Login
+  ->Create / Upload Resume
+  ->Add Projects & Skills
+  ->Apply for Jobs / Internships
+  ->Register for Job Fair
+  ->View Feedback & Shortlist Results
+
+2.Recruiter
+  ->Login as Company Recruiter
+  ->Create & Manage Job Positions
+  ->View Student Resumes
+  ->Review / Rate / Shortlist Candidates
+  ->View Job Fair Attendees
+
+3.Company
+  ->Register Company Profile
+  ->Assign Recruiters
+  ->Monitor Applications
+
+4.Admin
+  ->Manage Students, Recruiters, and Companies
+  ->Approve Job Fairs and Recruiters
+  ->Generate Reports and Analytics
+
+5.Job Fair Organizer
+  ->Create Job Fair Events
+  ->Assign Booths to Companies
+  ->Manage Student Check-in
+  ->Track Recruiter Participation
+
+#Relationships--->
+
+i.Student <---> Resume <---> Recruiter
+
+ii.Recruiter <---> Job Fair <---> Student
+
+iii.Admin <---> All Entities (for monitoring & analytics)
