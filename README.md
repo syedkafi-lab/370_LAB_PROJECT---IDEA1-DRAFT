@@ -1,6 +1,6 @@
-#Smart Career & Job Fair Management System — Lab Report
+Smart Career & Job Fair Management System 
 
--->Project Summary
+-->Project Summary :
 A combined database-driven platform to manage student resumes, job/internship postings, and job fair participation. Implements skill-based matching, recruiter reviews, and analytics.
 
 -->Deliverables in this package
