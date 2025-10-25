@@ -1,0 +1,86 @@
+1. Student
+      student_id (PK)
+      name
+      department
+      CGPA
+      graduation_year
+      email
+
+2. Resume
+      resume_id (PK)
+      student_id (FK)
+      summary
+      experience_years
+      linkedin_link
+      file_path (for uploaded CV)
+
+3. Skill
+      skill_id (PK)
+      skill_name
+
+4. StudentSkill
+      student_id (FK)
+      skill_id (FK)
+
+5. Project
+      project_id (PK)
+      student_id (FK)
+      title
+      tech_stack
+      description
+
+6. Company
+      company_id (PK)
+      name
+      industry
+      location
+      contact_email
+
+7. JobPosition
+      job_id (PK)
+      company_id (FK)
+      title
+      type
+      required_cgpa
+      required_skill_id (FK)
+      salary_range
+      status
+
+8. Application
+      app_id (PK)
+      student_id (FK)
+      job_id (FK)
+      status
+      apply_date
+
+9. JobFairEvent
+      event_id (PK)
+      name
+      date
+      venue
+      organizer
+
+10. JobFairParticipation
+      participation_id (PK)
+      student_id (FK)
+      event_id (FK)
+      resume_id (FK)
+      booth_no
+      applied_companies (optional JSON/text)
+      check_in_time
+
+11. RecruiterReview
+      review_id (PK)
+      recruiter_id (FK)
+      resume_id (FK)
+      rating (1–5)
+      feedback
+      shortlisted (boolean)
+      reviewed_at (timestamp)
+
+12. Recruiter
+      recruiter_id (PK)
+      company_id (FK)
+      name
+      email
+      designation
